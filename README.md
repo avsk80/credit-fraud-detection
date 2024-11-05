@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection
 
-This project aims to detect fraudulent credit card transactions through advanced data analysis and machine learning techniques. We address the challenges of high dimensionality and class imbalance using state-of-the-art tools in Python, achieving interpretable, robust, and high-performing models. Our approach combines data preparation, feature extraction, model evaluation, and interpretability with SHAP to make predictive insights actionable.
+This project aims to detect fraudulent credit card transactions through machine learning techniques. We address the challenges of high dimensionality and class imbalance, achieving interpretable, robust, and high-performing models. Our approach combines data preparation, feature extraction, model evaluation, and interpretability with SHAP to make predictive insights actionable.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
