@@ -102,5 +102,3 @@ Through this project, we achieved a highly accurate and interpretable fraud dete
 - **Explore Additional Features**: Incorporating external data sources, like transaction locations or user demographics, could improve model accuracy.
 - **Deploy as API**: Packaging the model as a real-time API would make it accessible for broader operational use.
 - **Advanced Interpretability Methods**: Additional methods like LIME could complement SHAP, offering even more diverse interpretability perspectives.
-
-This notebook and its detailed exploration of credit card fraud detection exemplify the synergy of advanced data science, careful feature engineering, model selection, and interpretability—key skills valued in data science roles.
