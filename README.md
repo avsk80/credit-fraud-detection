@@ -66,7 +66,7 @@ Interpreting model predictions is critical for stakeholder trust. To that end, w
   - **Tree Interpreter and Feature Importance Plots**: Offered a breakdown of contributions from each feature, crucial for transparency.
 
 ### Results
-- In this dataset, there are only 3.5% of fraud cases. This can be intuitively thought as, if we build a naive classifier that always outputs non-fraud the accuracy would be 96.5%. This can be thought as our baseline.
+- In this dataset, there are only 3.5% of fraud cases. This can be intuitively thought as, if we build a naive classifier that always outputs non-fraud the accuracy would be 96.5%. This can be thought of as our baseline.
 #### Key Results and Visuals
 - **Model Performance**:
   - XGBoost achieved the best overall results with an ROC-AUC of ~0.98.
@@ -77,12 +77,13 @@ Interpreting model predictions is critical for stakeholder trust. To that end, w
   - **Interpretability**: Force and ICE plots illustrated why specific transactions were classified as fraud, explaining feature influence in intuitive ways.
 
 #### Sample Results Summary Table:
-| Model                | Accuracy | ROC-AUC | Precision | Recall |
-|----------------------|----------|---------|-----------|--------|
-| Logistic Regression  | 92.5%    | 0.85    | 0.82      | 0.78   |
-| Random Forest        | 95.2%    | 0.92    | 0.89      | 0.85   |
-| **XGBoost (Best)**   | 96.8%    | **0.98**| **0.94**  | **0.90**|
-| LightGBM             | 95.8%    | 0.95    | 0.90      | 0.88   |
+| Model                | Accuracy | ROC-AUC | Weighted Precision | Weighted Recall |
+|----------------------|----------|---------|--------------------|-----------------|
+| Logistic Regression  | 92.5%    | 0.85    | 0.82               |          0.78   |
+| Random Forest        | 97.3%    | 0.88    | 0.91               |          0.65   |
+| **XGBoost (Best)**   | 97.9%    | **0.93**| **0.94**           |         **0.73**|
+| LightGBM             | 97.7%    | 0.93    | 0.92               |          0.70   |
+| LightGBM(oversampled)| 88.7%    | 0.92    | 0.60               |          0.85   |
 
 ### Conclusion
 
@@ -91,7 +92,7 @@ Through this project, we achieved a highly accurate and interpretable fraud dete
 ### Key Insights
 
 1. **Memory Efficiency**: Reducing memory usage allowed us to work with large datasets efficiently, a critical aspect of handling high-dimensional fraud data.
-2. **Imbalanced Data Handling**: The use of `RandomOverSampler` effectively addressed the imbalance, significantly boosting model accuracy for minority classes.
+2. **Imbalanced Data Handling**: The use of `RandomOverSampler` effectively addressed the imbalance, boosting model recall for minority class. However, the overall accuracy was impacted resulting in a significantly less accurate model than the baseline
 3. **Model Calibration for Trustworthy Predictions**: Calibrated probabilities made the model’s outputs more actionable, particularly in a domain where the cost of errors is high.
 4. **SHAP-Based Interpretability**: The use of SHAP not only validated the model's predictions but also provided granular insights into fraud patterns, improving trust among stakeholders.
 
