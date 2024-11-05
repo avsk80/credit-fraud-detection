@@ -79,7 +79,6 @@ Interpreting model predictions is critical for stakeholder trust. To that end, w
 #### Sample Results Summary Table:
 | Model                | Accuracy | ROC-AUC | Weighted Precision | Weighted Recall |
 |----------------------|----------|---------|--------------------|-----------------|
-| Logistic Regression  | 92.5%    | 0.85    | 0.82               |          0.78   |
 | Random Forest        | 97.3%    | 0.88    | 0.91               |          0.65   |
 | **XGBoost (Best)**   | 97.9%    | **0.93**| **0.94**           |         **0.73**|
 | LightGBM             | 97.7%    | 0.93    | 0.92               |          0.70   |
