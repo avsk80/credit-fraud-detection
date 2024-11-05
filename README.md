@@ -69,7 +69,7 @@ Interpreting model predictions is critical for stakeholder trust. To that end, w
 - In this dataset, there are only 3.5% of fraud cases. This can be intuitively thought as, if we build a naive classifier that always outputs non-fraud the accuracy would be 96.5%. This can be thought of as our baseline.
 #### Key Results and Visuals
 - **Model Performance**:
-  - XGBoost achieved the best overall results with an ROC-AUC of ~0.98.
+  - XGBoost achieved the best overall results with an ROC-AUC of ~0.93.
   - Calibration curves validated that predicted probabilities were well-aligned with actual fraud rates.
   
 - **SHAP Findings**:
