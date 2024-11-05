@@ -102,3 +102,6 @@ Through this project, we achieved a highly accurate and interpretable fraud dete
 - **Explore Additional Features**: Incorporating external data sources, like transaction locations or user demographics, could improve model accuracy.
 - **Deploy as API**: Packaging the model as a real-time API would make it accessible for broader operational use.
 - **Advanced Interpretability Methods**: Additional methods like LIME could complement SHAP, offering even more diverse interpretability perspectives.
+
+### References: 
+1) https://www.kaggle.com/competitions/ieee-fraud-detection
