@@ -55,7 +55,7 @@ Key Results from Modeling:
 
 To make our model predictions more interpretable, we performed **Calibration**:
 - **CalibratedClassifierCV** was applied to transform model outputs into well-calibrated probabilities, improving the interpretability of predictions.
-- **Calibration Curves**: Calibration plots confirmed that the predicted probabilities closely aligned with actual fraud likelihood, making these predictions actionable for business decisions.
+- **Calibration Curves**: Calibration plots confirmed that the predicted probabilities are closely aligned with actual fraud likelihood, making these predictions actionable for business decisions.
 
 ### Interpretability with SHAP and Partial Dependence
 
@@ -66,10 +66,10 @@ Interpreting model predictions is critical for stakeholder trust. To that end, w
   - **Tree Interpreter and Feature Importance Plots**: Offered a breakdown of contributions from each feature, crucial for transparency.
 
 ### Results
-
+- In this dataset, there are only 3.5% of fraud cases. This can be intuitively thought as, if we build a naive classifier that always outputs non-fraud the accuracy would be 96.5%. This can be thought as our baseline.
 #### Key Results and Visuals
 - **Model Performance**:
-  - XGBoost achieved the best overall results with a ROC-AUC of ~0.98.
+  - XGBoost achieved the best overall results with an ROC-AUC of ~0.98.
   - Calibration curves validated that predicted probabilities were well-aligned with actual fraud rates.
   
 - **SHAP Findings**:
